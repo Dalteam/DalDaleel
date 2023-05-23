@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daleel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+    <script src="openm.js"></script>
+</head>
+<body>
+    <header>
+        <section class="header">
+            <nav>
+                <img class="logo" src="images/logoimam.png">
+                <div class="nav-links" id="navLinks">
+                    <ul>
+                        <li><a href="#" id="dalBtn">دليل</a></li>
+                        <li><a href="https://imamu.edu.sa/Pages/default.aspx" target="_blank" rel="noopener noreferrer">موقع الجامعة</a></li>
+                        <li><a href="#"  onclick="send()">الشكاوي</a></li>
+                        <script>
+                            function send(){
+                                window.location.href='mailto:DaleelTheGuide@gmail.com';  
+                            }
+                        </script>
+                        <li><a href="#" id="loginBtn" >  المدير </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="modal" id="loginModal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h6>تسجيل الدخول</h6>
+                    <form>
+                        <br>
+                        <input type="password" id="password" placeholder="ادخل كلمة السر" name="password" required>
+                        <br>
+                        <button type="submit" onclick="validate()"><span>دخول</span></button>
+                    </form>
+                </div>
+            </div>
+            <script src="scripts.js"></script>
+    
+            <div class="modal" id="dalModal">
+                <div class="modal-con">
+                    <span class="close2">&times;</span>
+                    <br>
+                    <br>
+                    <h3>    عن دليل</h3>
+                    <form>
+                       
+                        <br>
+                       <p> 
+                        دليل هو موقع طور من قبل فريق من طلبة علوم الحاسب في جامعة الإمام محمد بن سعود الإسلامية،
+                        لمساعدة الطلاب والزائرين في إيجاد مكاتب أعضاء هيئة التدريس و الموظفين بوقت قياسيّ،
+                        عن طريق توفير خريطة رسومية توضح موقع المكتب مرفقةً بمعلومات صاحب المكتب
+                       </p>
+                        <br>
+                        <br>
+                        
+                       
+                    </form>
+                </div>
+            </div>
+            <script src="script2.js"></script>
+        </section>
+    </header>
+    <section class="middle">
+        <div class="text-box">
+            <h1><img src="images/output-onlinejpgtools.png"></h1>
+            <p class="search">
+                <form action="search.html" class="search-bar">
+                    <input type="search" placeholder="...البحث" name="q">
+                 </form>
+            </p>
+        </div>
+    </section>
+    <footer>
+        <section class="services">
+            <h5>الخدمات المقترحة</h5>
+            <div class="container">
+                <div class="box">
+                    <h7>لجنة الأعذار</h7>
+                </div>
+                <div class="box">
+                    <h7>وحدة التدريب</h7>
+                </div>
+                <div class="box">
+                    <h7>الإرشاد الأكاديمي</h7>
+                </div>
+                <div class="box">
+                    <h7>شؤون الطالبات</h7>
+                </div>
+                <div class="box">
+                    <h7>وحدة النشاط</h7>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

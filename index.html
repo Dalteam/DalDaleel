@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daleel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <img class="logo" src="images/logoimam.png">
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="home.html" id="dalBtn">تسجيل الخروج</a></li>
+                    <li><a href="https://dalteam.github.io/daleelbackendreact/" target="_blank" rel="noopener noreferrer">عرض السجلات</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="middle">
+        <div class="text-box">
+            <h1><img src="images/output-onlinejpgtools.png"></h1>
+            <p class="search">
+                <form action="asearch.html" class="search-bar">
+                    <input id = "search-input" type="search" placeholder="...البحث" name="q">
+                 </form>
+            </p>
+        </div>
+    </section>
+    <footer>
+        <section class="services">
+            <h5>الخدمات المقترحة</h5>
+            <div class="container">
+                <div class="add">
+                    <h8>+</h8>
+                </div>
+                <div class="box">
+                    <h7>وحدة النشاط</h7>
+                </div>
+                <div class="box">
+                    <h7>شؤون الطالبات</h7>
+                </div>
+                <div class="box">
+                    <h7>الإرشاد الأكاديمي</h7>
+                </div>
+                <div class="box">
+                    <h7>وحدة التدريب</h7>
+                </div>
+                <div class="box">
+                    <h7>لجنة الأعذار</h7>
+                </div>
+            </div>
+        </section>
+    </footer>
+        <script>
+       //search 
+    const searchElement = document.querySelector('#search-input');
+    searchElement.addEventListener("search", event => {
+     fetch({
+        url: `/api/search?query=${searchElement.value}`
+    }).then(f => f.json()).then(data => {
+     
+    })
+    })
+        </script>
+</body>
+</html>
