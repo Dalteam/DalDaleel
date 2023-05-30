@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.23ce39c8.css",
+    "main.js": "/static/js/main.1bd320dd.js",
+    "static/media/logoimam.png": "/static/media/logoimam.08e94049672715188b2d.png",
+    "static/media/menu.png": "/static/media/menu.b641b2ee66cc66c4507a.png",
+    "static/media/Daleel7.svg": "/static/media/Daleel7.94b9a02d3b68ebfa369e.svg",
+    "index.html": "/index.html",
+    "static/media/search.svg": "/static/media/search.c2c32b67429443185d37.svg",
+    "main.23ce39c8.css.map": "/static/css/main.23ce39c8.css.map",
+    "main.1bd320dd.js.map": "/static/js/main.1bd320dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23ce39c8.css",
+    "static/js/main.1bd320dd.js"
+  ]
+}
